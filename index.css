@@ -127,10 +127,12 @@ html {
     color: #37352FA6;
     display: inline;
     border-bottom: solid #37352FA6 1px;
+    cursor: pointer;
 }
 
 .general:hover {
     background-color: rgba(55, 53, 47, 0.08);
+    cursor: pointer;
 }
 
 .from-general {
@@ -153,6 +155,7 @@ html {
     font-size: 14px;
     min-width: 500px;
     height: 52px;
+    cursor: pointer;
 }
 
 .full-acsess {
@@ -162,6 +165,7 @@ html {
     justify-content: right;
     align-items: center;
     float: right;
+    cursor: pointer;
 }
 
 .share-to-web {
@@ -171,10 +175,15 @@ html {
     font-size: 14px;
     min-width: 500px;
     height: 52px;
-    box-shadow: rgba(55, 53, 47, 0.09) 0px -1px 0px;
+    box-shadow: rgba(55, 53, 47, 0.09) 0px -1px 0px, rgba(55, 53, 47, 0.09) 0px 1px 0px;
     width: 100%;
     flex-direction: row;
+    cursor: pointer;
 
+}
+
+.share-to-web:hover {
+    background-color: rgba(55, 53, 47, 0.08);
 }
 
 .space-between {
@@ -207,4 +216,37 @@ html {
     box-sizing: content-box;
     background: rgb(35, 131, 226);
 
+}
+
+.bottom {
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: relative;
+}
+
+.help {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.svg-wrapper {
+    margin: 2px 8px 0px 8px;
+}
+
+.help:hover {
+    background-color: rgba(55, 53, 47, 0.08);
 }
